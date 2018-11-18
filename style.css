@@ -1,0 +1,65 @@
+body {
+    font-family: 'Dosis', sans-serif;
+}
+.navbar {
+    border-bottom: solid #4aaaa5 3px;
+    padding: 0;
+}
+.navbar-brand {
+    background-color: #4aaaa5;
+    padding: 15px;
+    margin: 0;
+}
+.navbar-nav {
+    color: grey;
+    text-align: right;
+}
+body {
+    background-image: url("images/full-bloom.png")
+}
+.three {
+    background: white;
+    position: relative;
+    top: 80px;
+    border: 1.5px lightgray solid;
+}
+a {
+    color: gray;
+}
+a:hover {
+    color: pink;
+}
+h1 {
+    color: white;
+}
+.first-header {
+    color: #4aaaa5;
+    padding-top: 10px;
+}
+/* moving header controls inline with page content */
+.one, .two{
+    padding-left: 0;
+    padding-right: 0;
+}
+hr {
+    border-style: solid;
+    border-width: 1.5px;
+    border-color: lightgray;
+}
+footer {
+    background: gray;
+    border-top: solid 3px #4aaaa5;
+    text-align: center;
+    height: 40px;
+    bottom: 0;
+    color: #ffffff;
+    width: 100%;
+    padding-top: 20px;
+}
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -63px;
+}
+.push {
+    height: 63px;
+}
