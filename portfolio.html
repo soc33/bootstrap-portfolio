@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <!--linking google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    <!-- linking favicon -->
+    <link rel='icon' href='images/kitykatGameImageSmall.png' type='image/x-icon' />
 </head>
 
 <body>
@@ -48,56 +50,7 @@
                         <hr>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" src="images/cheezypuffgame.png" alt="cheezy puff game">
-                            <div class="card-body">
-                                <p class="card-text">Cheezy puff game I made on <a href="https://scratch.mit.edu/projects/255625000/">Scratch</a>.
-                                    First game I ever coded.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" src="images/catmousegame.png" alt="Cat mouse game">
-                            <div class="card-body">
-                                <p class="card-text">Cat mouse space invader type game I made on <a href="https://scratch.mit.edu/projects/256359727/">Scratch</a>.
-                                    My second
-                                    game I ever coded myself.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" src="images/160.png" alt="placeholder1">
-                            <div class="card-body">
-                                <p class="card-text">Placeholder image for <a href="https://soc33.github.io/bootstrap-portfolio/comingsoon">game</a> that I will make in the
-                                    future!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br><br>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" src="images/160.png" alt="placeholder2">
-                            <div class="card-body">
-                                <p class="card-text">Placeholder image for <a href="https://soc33.github.io/bootstrap-portfolio/comingsoon">game</a> that I will make in the
-                                    future!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" src="images/160.png" alt="placeholder3">
-                            <div class="card-body">
-                                <p class="card-text">Placeholder image for <a href="https://soc33.github.io/bootstrap-portfolio/comingsoon">game</a> that I will make in the
-                                    future!</p>
-                            </div>
-                        </div>
-                    </div>
+                <div id="project-view" class="row">
                 </div>
                 <br><br>
             </div>
@@ -108,6 +61,113 @@
             </p>
 
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                var projectArrayOfObjects = [
+                    project1 = {
+                    name: "Cheezy Puff Game",
+                    picture: "images/cheezypuffgame.png",
+                    text: "Cheezy puff game I made on Scratch. First game I ever coded. ",
+                    link: "https://scratch.mit.edu/projects/255625000/"
+                }, 
+                project2 = {
+                    name: "WireFrame Trial",
+                    picture: "images/wireframes-simple.png",
+                    text: "First real homework assignment in the bootcamp, making Wireframes. ",
+                    link: "https://soc33.github.io/HW-Wireframe/"
+                },
+                project3 = {
+                    name: "Basic Portfolio",
+                    picture: "images/portfolio.jpg",
+                    text: "First attempt at making a portfolio ",
+                    link: "https://soc33.github.io/Basic-Portfolio/"
+                },
+                project4 = {
+                    name: "Responsive Portfolio",
+                    picture: "images/responsive.jpg",
+                    text: "Making my portfolio mobile and screen size responsive ",
+                    link: "https://soc33.github.io/responsive-portfolio/"
+                },
+                project5 = {
+                    name: "Rock Paper Scissors!",
+                    picture: "images/rps.jpg",
+                    text: "Pretty self explanatory here its Rock Paper Scissors! ",
+                    link: "https://soc33.github.io/rock-paper-scissors/"
+                },
+                project6 = {
+                    name: "Adventure Game",
+                    picture: "images/dnd.jpg",
+                    text: "An adventure game I made out of alerts! ",
+                    link: "https://soc33.github.io/adventure-game/"
+                },
+                project7 = {
+                    name: "Psychic Game",
+                    picture: "images/psychic.jpg",
+                    text: "Cool Psychic Game I made to play with Javascript for the first time! ",
+                    link: "https://soc33.github.io/Psychic-game/"
+                },
+                project8 = {
+                    name: "Word Guess Game",
+                    picture: "images/wordGuess.jpg",
+                    text: "A word guessing game I made about fruits and veggies, be sure to check out the links! ",
+                    link: "https://soc33.github.io/Word-Guess-Game/"
+                },
+                project9 = {
+                    name: "Unit 4 Games",
+                    picture: "images/question.jpg",
+                    text: "Starts with a simple coin collector game to save the princess, but then there is a surprise if you get to 5 wins! ",
+                    link: "https://soc33.github.io/unit-4-game/"
+                },
+                project10 = {
+                    name: "Minecraft Trivia",
+                    picture: "images/minecraft.jpg",
+                    text: "Test your luck at my Minecraft Trvia Game! ",
+                    link: "https://soc33.github.io/total-trivia/"
+                },
+                project11 = {
+                    name: "New York Times Search",
+                    picture: "images/nyt.png",
+                    text: "First true group project! Manipulating the NYT API do search for articles ",
+                    link: "https://soc33.github.io/NYTsearch/"
+                },
+                project12 = {
+                    name: "GIF search",
+                    picture: "images/giphy.gif",
+                    text: "Using GIPHY API to search for GIFS ",
+                    link: "https://soc33.github.io/Giftastic/"
+                },
+                project13 = {
+                    name: "To Do List",
+                    picture: "images/toDo.png",
+                    text: "First time manipulating locale storage to save a to-do list ",
+                    link: "https://soc33.github.io/to-do-list/"
+                },
+                project14 = {
+                    name: "Coming Soon",
+                    picture: "images/coming-soon.png",
+                    text: "Another project is underway! ",
+                    link: "#"
+                }
+
+                ];
+                for (i = 0; i < projectArrayOfObjects.length; i++) {
+                    var newCard = $("<div class='card' style='width: 18rem;'>");
+                    var newImg = $("<img class='card-img-top img-fluid'>").attr("src", projectArrayOfObjects[i].picture);
+                    var newDiv = $("<div class='card-body'>");
+                    var newText = $("<p class='card-text'>").text(projectArrayOfObjects[i].text);
+                    var newLink = $("<a>").attr("href", projectArrayOfObjects[i].link).text("Click here to check out project " + parseInt(i + 1));
+
+                    newText.append(newLink);
+                    newDiv.append(newText);
+                    newCard.append(newImg);
+                    newCard.append(newDiv);
+
+                    $("#project-view").prepend(newCard);
+                }
+            });
+
+        </script>
 
 </body>
 
