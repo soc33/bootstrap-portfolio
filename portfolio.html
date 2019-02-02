@@ -144,6 +144,24 @@
                     link: "https://soc33.github.io/to-do-list/"
                 },
                 project14 = {
+                    name: "jQuery Calculator",
+                    picture: "images/calculator.png",
+                    text: "Working Calculator with jQuery ",
+                    link: "https://soc33.github.io/Jquery-Calculator/"
+                },
+                project15 = {
+                    name: "Train Schedule",
+                    picture: "images/train.jpg",
+                    text: "A train scheule using Firebase to have data persisting over multiple users! ",
+                    link: "https://soc33.github.io/train-schedule/"
+                },
+                project16 = {
+                    name: "Safely",
+                    picture: "images/safetyfirst.jpg",
+                    text: "First group project! Helping people determine their safest areas! ",
+                    link: "https://soc33.github.io/Safely/"
+                },
+                project17= {
                     name: "Coming Soon",
                     picture: "images/coming-soon.png",
                     text: "Another project is underway! ",
@@ -152,7 +170,7 @@
 
                 ];
                 for (i = 0; i < projectArrayOfObjects.length; i++) {
-                    var newCard = $("<div class='card' style='width: 18rem;'>");
+                    var newCard = $("<div class='card' style='width: 18rem; '>");
                     var newImg = $("<img class='card-img-top img-fluid'>").attr("src", projectArrayOfObjects[i].picture);
                     var newDiv = $("<div class='card-body'>");
                     var newText = $("<p class='card-text'>").text(projectArrayOfObjects[i].text);
